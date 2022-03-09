@@ -1,4 +1,4 @@
-class DatabaseError extends Error {
+class ForbiddenError extends Error {
     constructor(
         public message: string,
         public error?: any
@@ -7,4 +7,4 @@ class DatabaseError extends Error {
     }
 }
 
-export default DatabaseError
+export default ForbiddenError
