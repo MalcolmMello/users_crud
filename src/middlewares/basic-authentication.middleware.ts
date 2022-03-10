@@ -3,7 +3,7 @@ import ForbiddenError from "../models/errors/forbidden.error.model";
 import userRepository from "../repositories/user.repository";
 
 async function basicAuthenticationMiddleware(req: Request, res: Response, next: NextFunction) {
-    const authorizationHeader = req.headers['authorization'];
+        const authorizationHeader = req.headers['authorization'];
 
         if(!authorizationHeader) {
             throw new ForbiddenError('Credenciais não informadas');
